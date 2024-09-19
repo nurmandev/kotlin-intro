@@ -1,0 +1,52 @@
+# Kotlin specific
+*.iml
+.gradle/
+build/
+out/
+.idea/
+*.log
+*.jar
+*.war
+*.ear
+*.class
+*.apk
+*.dex
+*.so
+*.o
+*.d
+*.kt~
+*.main.kts
+*.kts
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/shelf/
+.idea/modules.xml
+.idea/.idea/
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Android specific (if applicable)
+*.keystore
+.gradle/
+local.properties
+app/app.iml
+app/build/
+
+# Other
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
+*.backup
