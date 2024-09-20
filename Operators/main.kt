@@ -55,5 +55,17 @@ fun main() {
             val secondNum = 130;
 
             val max = if (firstNum > secondNum) firstNum else secondNum;
-            println("User maximum is : $max")
+            println("User maximum is : $max");
+
+
+//            USE WHEN Conditionals: WHEN Statements
+
+            val trafficLightColour = "Red";
+            when(trafficLightColour){
+                "Red" -> println("Stop")
+                "Yellow" -> println("Get Ready")
+                "Green" -> println("Go")
+
+                else -> println("Invalid colour")
+            }
 }
