@@ -23,10 +23,30 @@ fun main() {
 
 
             val applePrice = 20;
-            val OrangePrice = 4;
+            val orangePrice = 4;
 
-            val fruitPrice = applePrice + OrangePrice;
+            val fruitPrice = applePrice + orangePrice;
             println(fruitPrice);
 
             println("Can we go outside ${fruitPrice}");
+
+
+
+//            CONDITIONAL OPERATOR
+            val age = 16;
+            if(age >= 18){
+                println("You're eligible to vote");
+            }else{
+                println("You're not eligible to vote");
+            }
+
+
+            val voterAge = 70;
+            if (voterAge >= 60){
+                println("You can vote you're eligible for senior citizen discount");
+            }else if (voterAge >= 18){
+                println("You can vote but you're not eligible for senior citizen discount");
+            }else{
+                println("You can not vote and you're eligible for senior citizen discount");
+            }
 }
