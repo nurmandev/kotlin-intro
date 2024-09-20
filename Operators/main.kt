@@ -49,4 +49,11 @@ fun main() {
             }else{
                 println("You can not vote and you're eligible for senior citizen discount");
             }
+
+
+            val firstNum = 20;
+            val secondNum = 130;
+
+            val max = if (firstNum > secondNum) firstNum else secondNum;
+            println("User maximum is : $max")
 }
