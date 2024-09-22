@@ -1,5 +1,9 @@
 package DataTypes;
 
+
+fun main(){
+
+}
 public class IntergerData {
     var userAge: Int = 20;
 
