@@ -6,8 +6,10 @@ fun main(){
     println(favCar.brand);
 
     val myDog = Dog("Bingo");
-
     myDog.eat();
+
+    Cars().drive();
+
 }
 //class Car {
 ////    variable inside class called property
@@ -15,6 +17,24 @@ fun main(){
 //    val brand:String = "Benz";
 //    val year:String = "2024";
 //}
+
+
+
+
+// Shape; Triangle, Square
+
+open class Shape (val name: String){
+    fun findArea(){
+        println("Calculate area...");
+    }
+}
+
+class Triangle(name: String): Shape(name){
+    fun numbSize(): Int{
+        return 3;
+    }
+}
+
 
 class Car (
     val colour:String ,
@@ -39,4 +59,29 @@ class Dog(name: String) : Animal(name){
     fun bark(){
         println("$name is barking")
     }
+}
+
+
+interface Drivable{
+    fun drive();
+}
+interface Flyable{
+    fun fly();
+}
+
+
+class Cars : Drivable{
+    override fun drive() {
+        println("Car is driving");
+    }
+
+}
+class AirPlane : Drivable, Flyable{
+    override fun drive() {
+        println("Plane is driving");
+    }
+    override fun fly() {
+        println("Plane is flying");
+    }
+
 }
